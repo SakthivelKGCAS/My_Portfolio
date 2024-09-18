@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div{
+  color: #095d95;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  background-color: #c10808;
+  padding: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
   color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul li a:hover {
+  background-color: #f99f7c;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div {
+  padding: 20px;
+}
+
+
+
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+table.qualification-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table.qualification-table th, table.qualification-table td {
+  border: 1px solid black; /* Changed border color to black */
+  padding: 12px;
+  text-align: left;
+}
+
+table.qualification-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+table.qualification-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table.qualification-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+a {
+  color: #3498db;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+
+h1 {
+  color: #095cb0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #137bc0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Custom styling for carousel images */
+.carousel-item img {
+  height: 700px; /* Set height for images */
+  object-fit: cover; /* This keeps the aspect ratio intact */
+  width: 100%;
+}
+/* Custom height for ds1.jpg */
+.carousel-item img[src*="ds1.jpg"] {
+  height: 1200px; /* Set height for ds1.jpg */
+}
+.carousel-caption h3 {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carousel-caption p {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  border-radius: 5px;
 }
